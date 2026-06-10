@@ -6,7 +6,7 @@
 
 - **官方仓库**：https://github.com/farion1231/cc-switch
 - **官方网站**：https://ccswitch.io
-- **上游 PR**：https://github.com/farion1231/cc-switch/pull/3896
+- **上游 PR**：https://github.com/farion1231/cc-switch/pull/4035
 
 ## 🔧 修复内容
 
@@ -49,7 +49,7 @@
 
 ### 这是临时解决方案
 
-- ✅ PR 已提交至上游：https://github.com/farion1231/cc-switch/pull/3896
+- ✅ PR 已提交至上游：https://github.com/farion1231/cc-switch/pull/4035
 - 📅 一旦上游合并，**建议升级到官方版本**
 - 不推荐长期依赖此 Fork 版本
 
@@ -64,7 +64,7 @@
 ## 🔄 何时升级回官方版本
 
 - ✅ 当原仓库发布 v3.16.3+ 版本时
-- ✅ 当 PR #3896 被官方合并时
+- ✅ 当 PR #4035 被官方合并时
 - 📧 关注此仓库的 [Releases](https://github.com/lssuzie/cc-switch/releases) 获取更新通知
 
 ## 🐛 问题反馈

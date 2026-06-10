@@ -7,7 +7,7 @@
 | **源仓库** | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) |
 | **Fork 时间** | 2026-06-08 |
 | **修复目标** | Codex + MiMo 多轮对话卡死问题 |
-| **上游 PR** | [#3896](https://github.com/farion1231/cc-switch/pull/3896) |
+| **上游 PR** | [#4035](https://github.com/farion1231/cc-switch/pull/4035) |
 
 ## 🎯 修复列表
 
@@ -38,7 +38,7 @@
 
 ## 📊 PR 状态
 
-- **上游 PR**：https://github.com/farion1231/cc-switch/pull/3896
+- **上游 PR**：https://github.com/farion1231/cc-switch/pull/4035
 - **状态**：⏳ 等待审核/合并
 - **预期**：官方合并后将弃用此 Fork
 
@@ -89,7 +89,7 @@ git push origin main
 
 **A**: 当以下任一条件满足时：
 - 官方发布包含此修复的版本（v3.16.3+）
-- 上游 PR #3896 被合并
+- 上游 PR #4035 被合并
 - 应用内检查更新提示有新版本
 
 ### Q: 此 Fork 会继续维护吗？

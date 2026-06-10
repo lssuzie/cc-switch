@@ -5,7 +5,7 @@
 ## 📍 仓库角色定位
 
 - ✅ **针对 MiMo 多轮对话问题的临时修复**
-- ✅ **等待上游合并** (PR: https://github.com/farion1231/cc-switch/pull/3896)
+- ✅ **等待上游合并** (PR: https://github.com/farion1231/cc-switch/pull/4035)
 - ⚠️ **不接受新功能提交**（应提交给官方仓库）
 
 ## 🔄 贡献流程
@@ -80,7 +80,7 @@ pnpm build
 
 - **官方仓库**：https://github.com/farion1231/cc-switch
 - **官方贡献指南**：https://github.com/farion1231/cc-switch/blob/main/CONTRIBUTING.md
-- **此 Fork 的 PR**：https://github.com/farion1231/cc-switch/pull/3896
+- **此 Fork 的 PR**：https://github.com/farion1231/cc-switch/pull/4035
 
 ---
 
