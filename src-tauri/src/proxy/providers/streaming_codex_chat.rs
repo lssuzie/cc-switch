@@ -78,6 +78,14 @@ struct ChatToResponsesState {
     latest_usage: Option<Value>,
     finish_reason: Option<String>,
     tool_context: CodexToolContext,
+    /// Buffer for short content deltas that look like a fragment of a `<think>`
+    /// tag (e.g. `"<think>"`, `"<think>\n"`, `"<"`). SSE chunks may split a
+    /// `<think>` open tag across two deltas; without buffering, the second
+    /// delta's content would be emitted as plain text and leak the model's
+    /// reasoning. See `content_when_reasoning_already_seen`.
+    pending_short_delta: Option<String>,
+    /// Buffer for content with an incomplete thinking block
+    pending_think_content: Option<String>,
 }
 
 impl Default for ChatToResponsesState {
@@ -97,6 +105,8 @@ impl Default for ChatToResponsesState {
             latest_usage: None,
             finish_reason: None,
             tool_context: CodexToolContext::default(),
+            pending_short_delta: None,
+            pending_think_content: None,
         }
     }
 }
