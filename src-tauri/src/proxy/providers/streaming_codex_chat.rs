@@ -559,6 +559,23 @@ impl ChatToResponsesState {
         let mut events = self.ensure_response_started();
         events.extend(self.flush_inline_think_at_boundary());
         events.extend(self.finalize_reasoning());
+        // Flush any pending short delta that never got a follow-up chunk
+        // (e.g. SSE stream ended mid-think-tag). If it looks like the start
+        // of a think tag, drop it (reasoning is already in reasoning_content).
+        // Otherwise emit as text so we don't silently drop content.
+        if let Some(pending) = self.pending_short_delta.take() {
+            if strip_leading_think_open_tag(&pending).is_none() && !pending.trim().is_empty() {
+                events.extend(self.push_text_delta(&pending));
+            }
+        }
+        // 流结束时，不完整的 think 块直接丢弃（reasoning_content 已有）
+        if let Some(pending) = self.pending_think_content.take() {
+            if let Some((_reasoning, answer)) = split_leading_think_block(&pending) {
+                if !answer.is_empty() {
+                    events.extend(self.push_text_delta(&answer));
+                }
+            }
+        }
         events.extend(self.finalize_text());
         events.extend(self.finalize_tools());
 
