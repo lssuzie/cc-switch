@@ -4,12 +4,12 @@
 
 ### Claude Code、Claude Desktop、Codex、Gemini CLI、OpenCode、OpenClaw 和 Hermes Agent 的全方位管理工具
 
-[![Version](https://img.shields.io/github/v/release/farion1231/cc-switch?color=blue&label=version)](https://github.com/farion1231/cc-switch/releases)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/farion1231/cc-switch/releases)
+[![Version](https://img.shields.io/github/v/release/lssuzie/cc-switch?color=blue&label=version)](https://github.com/lssuzie/cc-switch/releases)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/lssuzie/cc-switch/releases)
 [![Built with Tauri](https://img.shields.io/badge/built%20with-Tauri%202-orange.svg)](https://tauri.app/)
-[![Downloads](https://img.shields.io/github/downloads/farion1231/cc-switch/total)](https://github.com/farion1231/cc-switch/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/lssuzie/cc-switch/total)](https://github.com/lssuzie/cc-switch/releases/latest)
 
-<a href="https://trendshift.io/repositories/15372" target="_blank"><img src="https://trendshift.io/api/badge/repositories/15372" alt="farion1231%2Fcc-switch | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+> **MiMo 修复版** — 基于上游 CC Switch，修复 Codex + MiMo 多轮对话卡死、思维泄漏等问题。[查看修复详情](https://github.com/lssuzie/cc-switch/releases/tag/v3.16.3-mimo-fix) | [上游 PR #4035](https://github.com/farion1231/cc-switch/pull/4035)
 
 ### 🌐 唯一官方网站：**[ccswitch.io](https://ccswitch.io)**
 
@@ -19,7 +19,7 @@
 
 ## ❤️赞助商
 
-> [想出现在这里？](mailto:farion1231@gmail.com)
+> Fork 自 [farion1231/cc-switch](https://github.com/farion1231/cc-switch)，含 MiMo 多轮对话修复。
 
 <details open>
 <summary>点击折叠</summary>
@@ -532,7 +532,7 @@ pnpm test:unit --coverage
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=farion1231/cc-switch&type=Date)](https://www.star-history.com/#farion1231/cc-switch&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=lssuzie/cc-switch&type=Date)](https://www.star-history.com/#lssuzie/cc-switch&Date)
 
 ## License
 
